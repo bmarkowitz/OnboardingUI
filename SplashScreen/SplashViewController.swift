@@ -35,8 +35,8 @@ class SplashViewController: UIViewController {
         let infoBlockTwo = InfoBlockView(imageName: "gear", header: "Test Header", subtitle: "This is a test subtitle. This is a longer description of the item. This is an even longer description of the item.")
         let infoBlockThree = InfoBlockView(imageName: "gear", header: "Test Header", subtitle: "This is a test subtitle. This is a longer description of the item.")
 
-        mainStackView.addArrangedSubview(infoBlockTwo)
         mainStackView.addArrangedSubview(infoBlock)
+        mainStackView.addArrangedSubview(infoBlockTwo)
         mainStackView.addArrangedSubview(infoBlockThree)
         
         continueButton = UIButton(type: .system)
@@ -56,7 +56,7 @@ class SplashViewController: UIViewController {
             mainStackView.centerXAnchor.constraint(equalTo: view.layoutMarginsGuide.centerXAnchor),
             mainStackView.topAnchor.constraint(equalTo: headerLabel.bottomAnchor, constant: 50),
             mainStackView.widthAnchor.constraint(equalTo: view.layoutMarginsGuide.widthAnchor, multiplier: 3/4),
-            continueButton.bottomAnchor.constraint(equalTo: view.layoutMarginsGuide.bottomAnchor),
+            continueButton.bottomAnchor.constraint(equalTo: view.layoutMarginsGuide.bottomAnchor, constant: -25),
             continueButton.centerXAnchor.constraint(equalTo: view.layoutMarginsGuide.centerXAnchor),
             continueButton.widthAnchor.constraint(equalTo: view.layoutMarginsGuide.widthAnchor),
             continueButton.heightAnchor.constraint(equalToConstant: 50)
