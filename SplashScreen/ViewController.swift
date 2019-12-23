@@ -10,17 +10,30 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    var mainStackView: UIStackView!
+    
     override func loadView() {
         view = UIView()
-        view.backgroundColor = .white
+        view.backgroundColor = .systemBackground
+        
+        mainStackView = UIStackView()
+        mainStackView.axis = .vertical
+        mainStackView.spacing = 25
+        mainStackView.translatesAutoresizingMaskIntoConstraints = false
         
         let infoBlock = InfoBlockView(imageName: "gear", header: "Test Header", subtitle: "This is a test subtitle.")
-        infoBlock.translatesAutoresizingMaskIntoConstraints = false
-        view.addSubview(infoBlock)
+        let infoBlockTwo = InfoBlockView(imageName: "gear", header: "Test Header", subtitle: "This is a test subtitle. This is a longer description of the item.")
+        let infoBlockThree = InfoBlockView(imageName: "gear", header: "Test Header", subtitle: "This is a test subtitle. This is a longer description of the item.")
+
+        mainStackView.addArrangedSubview(infoBlockTwo)
+        mainStackView.addArrangedSubview(infoBlock)
+        mainStackView.addArrangedSubview(infoBlockThree)
+        view.addSubview(mainStackView)
         
         NSLayoutConstraint.activate([
-            infoBlock.centerXAnchor.constraint(equalTo: view.layoutMarginsGuide.centerXAnchor),
-            infoBlock.centerYAnchor.constraint(equalTo: view.layoutMarginsGuide.centerYAnchor)
+            mainStackView.centerXAnchor.constraint(equalTo: view.layoutMarginsGuide.centerXAnchor),
+            mainStackView.centerYAnchor.constraint(equalTo: view.layoutMarginsGuide.centerYAnchor),
+            mainStackView.widthAnchor.constraint(equalTo: view.layoutMarginsGuide.widthAnchor, multiplier: 2/3)
         ])
     }
 

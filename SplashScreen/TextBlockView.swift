@@ -28,17 +28,23 @@ class TextBlockView: UIStackView {
     
     func setupView() {
         axis = .vertical
+        alignment = .leading
         
         let headerLabel = UILabel()
         headerLabel.translatesAutoresizingMaskIntoConstraints = false
-        headerLabel.text = header
-        headerLabel.textColor = .systemGray
+        headerLabel.attributedText = NSAttributedString(string: header, attributes: [
+            .foregroundColor : UIColor.label,
+            .font : UIFont.preferredFont(forTextStyle: .headline)
+        ])
         
         let subtitleLabel = UILabel()
-        headerLabel.translatesAutoresizingMaskIntoConstraints = false
-        subtitleLabel.text = subtitle
-        subtitleLabel.textColor = .systemGray
-        
+        subtitleLabel.translatesAutoresizingMaskIntoConstraints = false
+        subtitleLabel.attributedText = NSAttributedString(string: subtitle, attributes: [
+            .foregroundColor : UIColor.secondaryLabel,
+            .font : UIFont.preferredFont(forTextStyle: .body),
+        ])
+        subtitleLabel.numberOfLines = 0
+
         addArrangedSubview(headerLabel)
         addArrangedSubview(subtitleLabel)
     }

@@ -30,6 +30,8 @@ class InfoBlockView: UIStackView {
     
     func setupView() {
         axis = .horizontal
+        alignment = .center
+        spacing = 20
         
         addArrangedSubview(imageView)
         addArrangedSubview(textBlock)
