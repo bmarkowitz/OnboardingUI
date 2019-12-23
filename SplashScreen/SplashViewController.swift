@@ -41,6 +41,7 @@ class SplashViewController: UIViewController {
         
         continueButton = UIButton(type: .system)
         continueButton.layer.cornerRadius = 15
+        continueButton.layer.cornerCurve = .continuous
         continueButton.setTitleColor(.white, for: .normal)
         continueButton.setAttributedTitle(NSAttributedString(string: "Continue", attributes: [.foregroundColor : UIColor.white, .font : UIFont.preferredFont(forTextStyle: .headline)]), for: .normal)
         continueButton.backgroundColor = .systemBlue
