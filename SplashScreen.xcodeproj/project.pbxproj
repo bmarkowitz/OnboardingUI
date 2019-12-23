@@ -12,6 +12,8 @@
 		8F8BA88223B03ED200E30EAC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F8BA88123B03ED200E30EAC /* ViewController.swift */; };
 		8F8BA88723B03ED500E30EAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F8BA88623B03ED500E30EAC /* Assets.xcassets */; };
 		8F8BA88A23B03ED500E30EAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F8BA88823B03ED500E30EAC /* LaunchScreen.storyboard */; };
+		8F8BA89623B043C000E30EAC /* InfoBlockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F8BA89523B043C000E30EAC /* InfoBlockView.swift */; };
+		8F8BA89823B043FC00E30EAC /* TextBlockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F8BA89723B043FC00E30EAC /* TextBlockView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		8F8BA88623B03ED500E30EAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8F8BA88923B03ED500E30EAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8F8BA88B23B03ED500E30EAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F8BA89523B043C000E30EAC /* InfoBlockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoBlockView.swift; sourceTree = "<group>"; };
+		8F8BA89723B043FC00E30EAC /* TextBlockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextBlockView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				8F8BA88623B03ED500E30EAC /* Assets.xcassets */,
 				8F8BA88823B03ED500E30EAC /* LaunchScreen.storyboard */,
 				8F8BA88B23B03ED500E30EAC /* Info.plist */,
+				8F8BA89523B043C000E30EAC /* InfoBlockView.swift */,
+				8F8BA89723B043FC00E30EAC /* TextBlockView.swift */,
 			);
 			path = SplashScreen;
 			sourceTree = "<group>";
@@ -134,6 +140,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F8BA89623B043C000E30EAC /* InfoBlockView.swift in Sources */,
+				8F8BA89823B043FC00E30EAC /* TextBlockView.swift in Sources */,
 				8F8BA88223B03ED200E30EAC /* ViewController.swift in Sources */,
 				8F8BA87E23B03ED200E30EAC /* AppDelegate.swift in Sources */,
 				8F8BA88023B03ED200E30EAC /* SceneDelegate.swift in Sources */,

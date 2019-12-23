@@ -13,6 +13,15 @@ class ViewController: UIViewController {
     override func loadView() {
         view = UIView()
         view.backgroundColor = .white
+        
+        let infoBlock = InfoBlockView()
+        infoBlock.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(infoBlock)
+        
+        NSLayoutConstraint.activate([
+            infoBlock.centerXAnchor.constraint(equalTo: view.layoutMarginsGuide.centerXAnchor),
+            infoBlock.centerYAnchor.constraint(equalTo: view.layoutMarginsGuide.centerYAnchor)
+        ])
     }
 
     override func viewDidLoad() {
