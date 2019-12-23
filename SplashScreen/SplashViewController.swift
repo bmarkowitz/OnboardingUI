@@ -31,9 +31,9 @@ class SplashViewController: UIViewController {
         mainStackView.spacing = 25
         mainStackView.translatesAutoresizingMaskIntoConstraints = false
         
-        let infoBlock = InfoBlockView(imageName: "gear", header: "Test Header", subtitle: "This is a test subtitle.")
-        let infoBlockTwo = InfoBlockView(imageName: "gear", header: "Test Header", subtitle: "This is a test subtitle. This is a longer description of the item. This is an even longer description of the item.")
-        let infoBlockThree = InfoBlockView(imageName: "gear", header: "Test Header", subtitle: "This is a test subtitle. This is a longer description of the item.")
+        let infoBlock = InfoBlockView(imageName: "chart.bar.fill", header: "Test Header", subtitle: "This is a test subtitle.")
+        let infoBlockTwo = InfoBlockView(imageName: "gear", header: "Another Test Header", subtitle: "This is a test subtitle. This is a longer description of the item. This is an even longer description of the item.")
+        let infoBlockThree = InfoBlockView(imageName: "person.crop.circle.fill.badge.xmark", header: "Final Test Header", subtitle: "This is a test subtitle. This is a longer description of the item.")
 
         mainStackView.addArrangedSubview(infoBlock)
         mainStackView.addArrangedSubview(infoBlockTwo)
@@ -55,7 +55,7 @@ class SplashViewController: UIViewController {
             headerLabel.centerXAnchor.constraint(equalTo: view.layoutMarginsGuide.centerXAnchor),
             mainStackView.centerXAnchor.constraint(equalTo: view.layoutMarginsGuide.centerXAnchor),
             mainStackView.topAnchor.constraint(equalTo: headerLabel.bottomAnchor, constant: 50),
-            mainStackView.widthAnchor.constraint(equalTo: view.layoutMarginsGuide.widthAnchor, multiplier: 3/4),
+            mainStackView.widthAnchor.constraint(equalTo: view.layoutMarginsGuide.widthAnchor, multiplier: 5/6),
             continueButton.bottomAnchor.constraint(equalTo: view.layoutMarginsGuide.bottomAnchor, constant: -25),
             continueButton.centerXAnchor.constraint(equalTo: view.layoutMarginsGuide.centerXAnchor),
             continueButton.widthAnchor.constraint(equalTo: view.layoutMarginsGuide.widthAnchor),

@@ -33,6 +33,10 @@ class InfoBlockView: UIStackView {
         alignment = .center
         spacing = 20
         
+        imageView.widthAnchor.constraint(equalToConstant: 50).isActive = true
+        imageView.heightAnchor.constraint(equalToConstant: 50).isActive = true
+        imageView.contentMode = .scaleAspectFit
+        
         addArrangedSubview(imageView)
         addArrangedSubview(textBlock)
     }
