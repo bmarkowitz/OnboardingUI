@@ -27,6 +27,8 @@ class TextBlockView: UIStackView {
     }
     
     func setupView() {
+        axis = .vertical
+        
         let headerLabel = UILabel()
         headerLabel.translatesAutoresizingMaskIntoConstraints = false
         headerLabel.text = header

@@ -1,0 +1,5 @@
+*.xcodeproj/
+DerivedData/
+*.pbxproj
+*xcworkspace
+*.DS_Store

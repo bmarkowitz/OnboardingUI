@@ -10,20 +10,28 @@ import UIKit
 
 class InfoBlockView: UIStackView {
     
-    var image: UIImageView!
+    var imageView: UIImageView!
     var textBlock: TextBlockView!
-    
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        
-        image = UIImageView(image: UIImage(systemName: "gear"))
-        textBlock = TextBlockView(header: "Test Header", subtitle: "This is a test subtitle.")
-        
-        addArrangedSubview(image)
-        addArrangedSubview(textBlock)
-    }
+    let configuration = UIImage.SymbolConfiguration(textStyle: .largeTitle)
 
+    init(imageName: String, header: String, subtitle: String) {
+        imageView = UIImageView(image: UIImage(systemName: imageName, withConfiguration: configuration))
+        textBlock = TextBlockView(header: header, subtitle: subtitle)
+        
+        super.init(frame: .zero)
+        setupView()
+    }
+    
     required init(coder: NSCoder) {
         super.init(coder: coder)
+        
+        setupView()
+    }
+    
+    func setupView() {
+        axis = .horizontal
+        
+        addArrangedSubview(imageView)
+        addArrangedSubview(textBlock)
     }
 }

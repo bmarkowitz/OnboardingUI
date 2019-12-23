@@ -14,7 +14,7 @@ class ViewController: UIViewController {
         view = UIView()
         view.backgroundColor = .white
         
-        let infoBlock = InfoBlockView()
+        let infoBlock = InfoBlockView(imageName: "gear", header: "Test Header", subtitle: "This is a test subtitle.")
         infoBlock.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(infoBlock)
         
