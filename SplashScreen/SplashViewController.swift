@@ -8,14 +8,23 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class SplashViewController: UIViewController {
     
+    var headerLabel: UILabel!
     var mainStackView: UIStackView!
     var continueButton: UIButton!
     
     override func loadView() {
         view = UIView()
         view.backgroundColor = .systemBackground
+        
+        headerLabel = UILabel()
+        headerLabel.translatesAutoresizingMaskIntoConstraints = false
+        headerLabel.attributedText = NSAttributedString(string: "What's New", attributes: [
+            .foregroundColor : UIColor.label,
+            .font : UIFont.systemFont(ofSize: 36, weight: .bold)
+        ])
+        headerLabel.translatesAutoresizingMaskIntoConstraints = false
         
         mainStackView = UIStackView()
         mainStackView.axis = .vertical
@@ -35,15 +44,17 @@ class ViewController: UIViewController {
         continueButton.setTitleColor(.white, for: .normal)
         continueButton.setAttributedTitle(NSAttributedString(string: "Continue", attributes: [.foregroundColor : UIColor.white, .font : UIFont.preferredFont(forTextStyle: .headline)]), for: .normal)
         continueButton.backgroundColor = .systemBlue
-        continueButton.tintColor = .blue
         continueButton.translatesAutoresizingMaskIntoConstraints = false
         
-        view.addSubview(continueButton)
+        view.addSubview(headerLabel)
         view.addSubview(mainStackView)
+        view.addSubview(continueButton)
         
         NSLayoutConstraint.activate([
+            headerLabel.topAnchor.constraint(equalTo: view.layoutMarginsGuide.topAnchor, constant: 50),
+            headerLabel.centerXAnchor.constraint(equalTo: view.layoutMarginsGuide.centerXAnchor),
             mainStackView.centerXAnchor.constraint(equalTo: view.layoutMarginsGuide.centerXAnchor),
-            mainStackView.centerYAnchor.constraint(equalTo: view.layoutMarginsGuide.centerYAnchor),
+            mainStackView.topAnchor.constraint(equalTo: headerLabel.bottomAnchor, constant: 50),
             mainStackView.widthAnchor.constraint(equalTo: view.layoutMarginsGuide.widthAnchor, multiplier: 3/4),
             continueButton.bottomAnchor.constraint(equalTo: view.layoutMarginsGuide.bottomAnchor),
             continueButton.centerXAnchor.constraint(equalTo: view.layoutMarginsGuide.centerXAnchor),
