@@ -23,6 +23,7 @@ class OBViewController: UIViewController {
         configureViewController()
         configureScrollView()
         configureHeaderView()
+        configureContentView()
         configureButtonTray()
     }
     
@@ -34,7 +35,7 @@ class OBViewController: UIViewController {
     private func configureScrollView() {
         scrollView = UIScrollView()
         scrollView.backgroundColor = .systemBackground
-        scrollView.alwaysBounceVertical = true
+        scrollView.isDirectionalLockEnabled = true
         scrollView.translatesAutoresizingMaskIntoConstraints = false
         
         view.addSubview(scrollView)
@@ -52,9 +53,22 @@ class OBViewController: UIViewController {
         scrollView.addSubview(headerView)
         
         NSLayoutConstraint.activate([
-            headerView.topAnchor.constraint(equalTo: view.topAnchor, constant: 50),
-            headerView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            headerView.trailingAnchor.constraint(equalTo: view.trailingAnchor)
+            headerView.topAnchor.constraint(equalTo: view.topAnchor, constant: 100),
+            headerView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 12),
+            headerView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -12)
+        ])
+    }
+    
+    private func configureContentView() {
+        contentView = OBContentView()
+        scrollView.addSubview(contentView)
+        
+        NSLayoutConstraint.activate([
+            contentView.topAnchor.constraint(equalTo: headerView.bottomAnchor, constant: 20),
+            contentView.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor),
+            contentView.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor),
+            contentView.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor),
+            contentView.widthAnchor.constraint(equalTo: scrollView.widthAnchor)
         ])
     }
     

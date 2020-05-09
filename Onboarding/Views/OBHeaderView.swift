@@ -31,9 +31,10 @@ class OBHeaderView: UIView {
         
         headerLabel.attributedText = NSAttributedString(string: title, attributes: [
             .foregroundColor : UIColor.label,
-            .font : UIFont.systemFont(ofSize: 30, weight: .bold),
+            .font : UIFont.systemFont(ofSize: 35, weight: .bold),
             .paragraphStyle : titleParagraphStyle
         ])
+        headerLabel.numberOfLines = 0
         addSubview(headerLabel)
         
         NSLayoutConstraint.activate([
