@@ -10,4 +10,6 @@ import UIKit
 
 class OBContentView: UIView {
     
+    var bulletedList: OBBulletedList!
+    
 }

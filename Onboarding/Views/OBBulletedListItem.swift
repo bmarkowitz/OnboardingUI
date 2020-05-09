@@ -9,13 +9,19 @@
 import UIKit
 
 class OBBulletedListItem: UIView {
-
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
+    
+    var imageContainer = UIView()
+    var imageView = UIImageView()
+    var stackView = UIStackView()
+    var titleLabel = UILabel()
+    var descriptionLabel = UILabel()
+    
+    init(with title: String, description: String, image: String) {
+        super.init(frame: .zero)
+        titleLabel.text = title
+        descriptionLabel.text = description
+        imageView.image = UIImage(systemName: image)
     }
-    */
-
+    
+    required init?(coder: NSCoder) { fatalError("init(coder:) has not been implemented") }
 }

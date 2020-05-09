@@ -9,5 +9,7 @@
 import UIKit
 
 class OBBulletedList: UIView {
+    
+    var items = [OBBulletedListItem]()
 
 }

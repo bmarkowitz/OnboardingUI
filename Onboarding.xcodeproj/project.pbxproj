@@ -16,7 +16,6 @@
 		8F71BD2C2466400700100D01 /* InfoBlockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F71BD2B2466400700100D01 /* InfoBlockView.swift */; };
 		8F71BD2E2466403600100D01 /* TextBlockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F71BD2D2466403600100D01 /* TextBlockView.swift */; };
 		8F71BD322466422A00100D01 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 8F71BD312466422A00100D01 /* .gitignore */; };
-		8F71BD34246645E400100D01 /* OBScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F71BD33246645E400100D01 /* OBScrollView.swift */; };
 		8F71BD362466461200100D01 /* OBButtonTray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F71BD352466461200100D01 /* OBButtonTray.swift */; };
 		8F71BD382466467400100D01 /* OBHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F71BD372466467400100D01 /* OBHeaderView.swift */; };
 		8F71BD3A2466468B00100D01 /* OBContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F71BD392466468B00100D01 /* OBContentView.swift */; };
@@ -36,7 +35,6 @@
 		8F71BD2B2466400700100D01 /* InfoBlockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoBlockView.swift; sourceTree = "<group>"; };
 		8F71BD2D2466403600100D01 /* TextBlockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextBlockView.swift; sourceTree = "<group>"; };
 		8F71BD312466422A00100D01 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
-		8F71BD33246645E400100D01 /* OBScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OBScrollView.swift; sourceTree = "<group>"; };
 		8F71BD352466461200100D01 /* OBButtonTray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OBButtonTray.swift; sourceTree = "<group>"; };
 		8F71BD372466467400100D01 /* OBHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OBHeaderView.swift; sourceTree = "<group>"; };
 		8F71BD392466468B00100D01 /* OBContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OBContentView.swift; sourceTree = "<group>"; };
@@ -92,7 +90,6 @@
 		8F71BD3B246646A900100D01 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				8F71BD33246645E400100D01 /* OBScrollView.swift */,
 				8F71BD352466461200100D01 /* OBButtonTray.swift */,
 				8F71BD372466467400100D01 /* OBHeaderView.swift */,
 				8F71BD392466468B00100D01 /* OBContentView.swift */,
@@ -184,7 +181,6 @@
 				8F8D5FA924664A52009C975D /* OBBulletedList.swift in Sources */,
 				8F71BD2C2466400700100D01 /* InfoBlockView.swift in Sources */,
 				8F71BD2A24663FCB00100D01 /* OBViewController.swift in Sources */,
-				8F71BD34246645E400100D01 /* OBScrollView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
