@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  OBViewController.swift
 //  SplashScreen
 //
 //  Created by Brett Markowitz on 12/22/19.
@@ -8,7 +8,10 @@
 
 import UIKit
 
-class SplashViewController: UIViewController {
+class OBViewController: UIViewController {
+    
+    var scrollView: OBScrollView!
+    var buttonTray: OBButtonTray!
     
     var headerLabel: UILabel!
     var mainStackView: UIStackView!

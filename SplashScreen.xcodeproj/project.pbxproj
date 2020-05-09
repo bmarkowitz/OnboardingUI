@@ -12,10 +12,14 @@
 		8F71BD1A24663F5300100D01 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F71BD1924663F5300100D01 /* MainViewController.swift */; };
 		8F71BD1F24663F5A00100D01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F71BD1E24663F5A00100D01 /* Assets.xcassets */; };
 		8F71BD2224663F5A00100D01 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F71BD2024663F5A00100D01 /* LaunchScreen.storyboard */; };
-		8F71BD2A24663FCB00100D01 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F71BD2924663FCB00100D01 /* SplashViewController.swift */; };
+		8F71BD2A24663FCB00100D01 /* OBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F71BD2924663FCB00100D01 /* OBViewController.swift */; };
 		8F71BD2C2466400700100D01 /* InfoBlockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F71BD2B2466400700100D01 /* InfoBlockView.swift */; };
 		8F71BD2E2466403600100D01 /* TextBlockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F71BD2D2466403600100D01 /* TextBlockView.swift */; };
 		8F71BD322466422A00100D01 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 8F71BD312466422A00100D01 /* .gitignore */; };
+		8F71BD34246645E400100D01 /* OBScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F71BD33246645E400100D01 /* OBScrollView.swift */; };
+		8F71BD362466461200100D01 /* OBButtonTray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F71BD352466461200100D01 /* OBButtonTray.swift */; };
+		8F71BD382466467400100D01 /* OBHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F71BD372466467400100D01 /* OBHeaderView.swift */; };
+		8F71BD3A2466468B00100D01 /* OBContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F71BD392466468B00100D01 /* OBContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,10 +30,14 @@
 		8F71BD1E24663F5A00100D01 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8F71BD2124663F5A00100D01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8F71BD2324663F5A00100D01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8F71BD2924663FCB00100D01 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		8F71BD2924663FCB00100D01 /* OBViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OBViewController.swift; sourceTree = "<group>"; };
 		8F71BD2B2466400700100D01 /* InfoBlockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoBlockView.swift; sourceTree = "<group>"; };
 		8F71BD2D2466403600100D01 /* TextBlockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextBlockView.swift; sourceTree = "<group>"; };
 		8F71BD312466422A00100D01 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		8F71BD33246645E400100D01 /* OBScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OBScrollView.swift; sourceTree = "<group>"; };
+		8F71BD352466461200100D01 /* OBButtonTray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OBButtonTray.swift; sourceTree = "<group>"; };
+		8F71BD372466467400100D01 /* OBHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OBHeaderView.swift; sourceTree = "<group>"; };
+		8F71BD392466468B00100D01 /* OBContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OBContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,17 +71,29 @@
 		8F71BD1424663F5300100D01 /* SplashScreen */ = {
 			isa = PBXGroup;
 			children = (
+				8F71BD3B246646A900100D01 /* Onboarding */,
 				8F71BD1524663F5300100D01 /* AppDelegate.swift */,
-				8F71BD2B2466400700100D01 /* InfoBlockView.swift */,
 				8F71BD1724663F5300100D01 /* SceneDelegate.swift */,
 				8F71BD1924663F5300100D01 /* MainViewController.swift */,
+				8F71BD2B2466400700100D01 /* InfoBlockView.swift */,
+				8F71BD2D2466403600100D01 /* TextBlockView.swift */,
 				8F71BD1E24663F5A00100D01 /* Assets.xcassets */,
 				8F71BD2024663F5A00100D01 /* LaunchScreen.storyboard */,
 				8F71BD2324663F5A00100D01 /* Info.plist */,
-				8F71BD2924663FCB00100D01 /* SplashViewController.swift */,
-				8F71BD2D2466403600100D01 /* TextBlockView.swift */,
 			);
 			path = SplashScreen;
+			sourceTree = "<group>";
+		};
+		8F71BD3B246646A900100D01 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				8F71BD2924663FCB00100D01 /* OBViewController.swift */,
+				8F71BD33246645E400100D01 /* OBScrollView.swift */,
+				8F71BD352466461200100D01 /* OBButtonTray.swift */,
+				8F71BD372466467400100D01 /* OBHeaderView.swift */,
+				8F71BD392466468B00100D01 /* OBContentView.swift */,
+			);
+			path = Onboarding;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,10 +169,14 @@
 			files = (
 				8F71BD1A24663F5300100D01 /* MainViewController.swift in Sources */,
 				8F71BD1624663F5300100D01 /* AppDelegate.swift in Sources */,
+				8F71BD362466461200100D01 /* OBButtonTray.swift in Sources */,
+				8F71BD3A2466468B00100D01 /* OBContentView.swift in Sources */,
 				8F71BD1824663F5300100D01 /* SceneDelegate.swift in Sources */,
+				8F71BD382466467400100D01 /* OBHeaderView.swift in Sources */,
 				8F71BD2E2466403600100D01 /* TextBlockView.swift in Sources */,
 				8F71BD2C2466400700100D01 /* InfoBlockView.swift in Sources */,
-				8F71BD2A24663FCB00100D01 /* SplashViewController.swift in Sources */,
+				8F71BD2A24663FCB00100D01 /* OBViewController.swift in Sources */,
+				8F71BD34246645E400100D01 /* OBScrollView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

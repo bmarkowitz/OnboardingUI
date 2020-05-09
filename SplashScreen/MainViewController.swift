@@ -10,16 +10,11 @@ import UIKit
 
 class MainViewController: UIViewController {
 
-    override func loadView() {
-        view = UIView()
-        view.backgroundColor = .systemBackground
-    }
     override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        view.backgroundColor = .systemBackground
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        present(SplashViewController(), animated: true)
+        present(OBViewController(), animated: true)
     }
 }
