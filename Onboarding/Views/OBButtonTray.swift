@@ -37,7 +37,7 @@ class OBButtonTray: UIView {
         addSubview(button)
         
         NSLayoutConstraint.activate([
-            button.centerYAnchor.constraint(equalTo: centerYAnchor),
+            button.topAnchor.constraint(equalTo: topAnchor, constant: 20),
             button.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 20),
             button.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -20),
             button.heightAnchor.constraint(equalToConstant: 50)
