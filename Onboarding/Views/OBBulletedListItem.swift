@@ -36,19 +36,17 @@ class OBBulletedListItem: UIView {
         addSubview(imageContainer)
         
         imageView.translatesAutoresizingMaskIntoConstraints = false
-        imageView.setContentHuggingPriority(.defaultHigh, for: .horizontal)
         imageContainer.addSubview(imageView)
         
         NSLayoutConstraint.activate([
             imageContainer.leadingAnchor.constraint(equalTo: leadingAnchor),
+            imageContainer.widthAnchor.constraint(equalToConstant: 40),
             imageContainer.centerYAnchor.constraint(equalTo: centerYAnchor),
             
             imageView.topAnchor.constraint(equalTo: imageContainer.topAnchor),
             imageView.leadingAnchor.constraint(equalTo: imageContainer.leadingAnchor),
             imageView.bottomAnchor.constraint(equalTo: imageContainer.bottomAnchor),
-            imageView.trailingAnchor.constraint(equalTo: imageContainer.trailingAnchor),
-            imageView.centerYAnchor.constraint(equalTo: imageContainer.centerYAnchor),
-            imageView.centerXAnchor.constraint(equalTo: imageContainer.centerXAnchor)
+            imageView.centerYAnchor.constraint(equalTo: imageContainer.centerYAnchor)
         ])
     }
     
